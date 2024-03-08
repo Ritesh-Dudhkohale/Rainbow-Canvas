@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(251, 186, 149), rgb(186, 122, 253));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li:nth-child(3) {
+    border-bottom: 2px solid white;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(250, 250, 250);
+}
+
+.contact-heading {
+    width: 450px;
+    font: bolder 2.5rem Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-text {
+    width: 450px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-slide {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-slide div {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 2) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.contact-slide h3 {
+    margin: 10px;
+}
+
+.contact-slide a:hover {
+    color: #008BC5;
+}
+
+.conatct-icons {
+    width: 55px;
+    height: 55px;
+}

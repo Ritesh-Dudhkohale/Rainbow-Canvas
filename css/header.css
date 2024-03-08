@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    font: bold 1.4rem "Fira Sans", sans-serif;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+}
+
+header div {
+    text-shadow: 2px 3px 0px #424242;
+}
+
+header img {
+    width: 90px;
+    height: 70px;
+    padding-right: 10px;
+}
+
+header ul, header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header ul li {
+    font: 0.8rem "Fira Sans", sans-serif;
+    margin-left: 20px;
+    list-style: none;
+}
+
+header ul li:hover {
+    border-bottom: 2px solid rgb(226, 225, 225);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
