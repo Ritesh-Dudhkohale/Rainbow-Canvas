@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-.container {
+.container-3c {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(62, 172, 222), rgb(255, 26, 182));
+    background-image: linear-gradient(to top, rgb(196, 194, 38), rgb(71, 24, 87), rgb(220, 108, 162));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +19,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.btn-div ,.orientation-div{
+.btn-div {
     width: 500px;
     display: flex;
     justify-content: space-evenly;
@@ -37,7 +38,7 @@ h1 {
     align-items: center;
 }
 
-.btn-div p,.orientation-div p{
+.btn-div p, .orientation-div p {
     padding: 10px;
     text-align: center;
     color: rgb(250, 250, 250);
@@ -45,14 +46,15 @@ h1 {
     width: 100%;
 }
 
-.btn-div div ,.orientation-div div{
+.btn-div div {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 #color-btn-1,
-#color-btn-2 {
+#color-btn-2,
+#color-btn-3 {
     width: 180px;
     height: 50px;
     font: 1rem "Fira Sans", sans-serif;
@@ -60,9 +62,17 @@ h1 {
     border: 0.8px solid rgb(255, 255, 255);
     outline: black;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    margin: 10px;
 }
 
-#color-btn-1:hover, #color-btn-2:hover {
+.button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#color-btn-1:hover, #color-btn-2:hover, #color-btn-3:hover {
     box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -72,6 +82,10 @@ h1 {
 
 #color-btn-2 {
     background-color: rgb(255, 26, 182);
+}
+
+#color-btn-3 {
+    background-color: rgb(236, 201, 225);
 }
 
 #gradient-head {
@@ -90,14 +104,14 @@ h1 {
 .css-div>p {
     padding-top: 15px;
     color: rgb(250, 250, 250);
-    /* text-shadow:2px 3px 0px #434346; */
+    /* text-shadow: 2px 3px 0px #434346; */
 }
 
 #css-copy {
     font: 1rem "Fira Sans", sans-serif;
     padding: 15px;
     color: white;
-    background-color: transparent;
+    background-image: linear-gradient(to right, rgb(123, 229, 224) rgb(185, 150, 158), rgb(224, 101, 248));
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border: 1px solid rgb(88, 88, 88);
     border-radius: 10px;
@@ -109,65 +123,4 @@ h1 {
 
 #css-copy:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.directions {
-    margin: 10px auto 30px auto;
-}
-
-.directions>span {
-    width: 32px;
-    height: 32px;
-    color: white;
-}
-
-.directions input::selection {
-    width: 10px;
-    height: 20px;
-    display: none;
-}
-
-.directions input {
-    width: 10px;
-    height: 20px;
-    display: none;
-}
-
-input[type="radio"]:checked + label {
-    background-color: black;
-}
-
-.directions label {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-.directions label:hover {
-    cursor: pointer;
-}
-
-.selected {
-    border: 1px solid white;
-}
-
-#generate-btn {
-    margin: 40px auto 20px auto;
-    width: 180px;
-    height: 50px;
-    background-color: rgb(62, 172, 222);
-    border-radius: 40px;
-    border-color: transparent;
-    font: 1.1rem "Fira Sans", sans-serif;
-    color: white;
-}
-
-#direction-range {
-    width: 200px;
-    height: 2.5px;
-    color: whitesmoke;
-    margin: auto auto 10px auto;
 }

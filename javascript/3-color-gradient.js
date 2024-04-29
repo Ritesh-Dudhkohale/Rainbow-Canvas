@@ -1,10 +1,11 @@
 // Get references to DOM elements
 const clrbtn1 = document.getElementById("color-btn-1");
 const clrbtn2 = document.getElementById("color-btn-2");
+const clrbtn3 = document.getElementById("color-btn-3");
 
 const generatebtn = document.getElementById("generate-btn");
 
-const container = document.querySelector(".container");
+const container3 = document.querySelector(".container-3c");
 const cssText = document.getElementById("css-copy");
 
 // Define hexGenerator function
@@ -39,16 +40,17 @@ const hexGenerator = (event) => {
     });
 
     // Update container background
-    container.style.background = `linear-gradient(${direction}, ${clrbtn1.innerText}, ${clrbtn2.innerText} 100%)`;
+    container3.style.background = `linear-gradient(${direction}, ${clrbtn1.innerText}, ${clrbtn2.innerText}, ${clrbtn3.innerText})`;
 
     // Update CSS code text
-    cssText.innerHTML = `background-image: ${container.style.background};`;
+    cssText.innerHTML = `background-image: ${container3.style.background};`;
   }
 };
 
 // Add event listeners
 clrbtn1.addEventListener("click", hexGenerator);
 clrbtn2.addEventListener("click", hexGenerator);
+clrbtn3.addEventListener("click", hexGenerator);
 
 document.querySelectorAll('input[name="directions"]').forEach((input) => {
   input.addEventListener("click", hexGenerator);

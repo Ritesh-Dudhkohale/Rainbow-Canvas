@@ -38,8 +38,14 @@ header ul li {
     list-style: none;
 }
 
+header ul li:active{
+    border-bottom: 2px solid white;
+}
+
 header ul li:hover {
+    padding: 5px;
     border-bottom: 2px solid rgb(226, 225, 225);
+    transition: ease-in-out;
 }
 
 a {
